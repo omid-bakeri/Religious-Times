@@ -1,0 +1,5 @@
+@media (min-width: 501px) and (max-width: 769px) {
+  body {
+    background-color: rgb(9, 115, 9);
+  }
+}

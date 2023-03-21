@@ -1,5 +1,71 @@
-@media screen and (min-width: 500px) {
-  /* body {
-    background-color: rgb(150, 235, 150);
-  } */
+@media (min-width: 200px) and (max-width: 250px) {
+  .logo-icon {
+    margin-right: 1.5rem;
+    width: 45px;
+    height: 45px;
+  }
+  .logoTitle {
+    padding-left: 1.5rem;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 251px) and (max-width: 300px) {
+  .logo-icon {
+    margin-right: 2.7rem;
+    width: 45px;
+    height: 45px;
+  }
+  .logoTitle {
+    padding-left: 2.7rem;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 350px) {
+  .logo-icon {
+    margin-right: 4rem;
+    width: 49px;
+    height: 49px;
+  }
+  .logoTitle {
+    padding-left: 4rem;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 400px) {
+  .logo-icon {
+    margin-right: 5.1rem;
+    width: 55px;
+    height: 55px;
+  }
+  .logoTitle {
+    padding-left: 5.1rem;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+  .logo-icon {
+    margin-right: 6.1rem;
+    width: 59px;
+    height: 59px;
+  }
+  .logoTitle {
+    padding-left: 6.1rem;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 500px) {
+  .logo-icon {
+    margin-right: 7.3rem;
+    width: 59px;
+    height: 59px;
+  }
+  .logoTitle {
+    padding-left: 7.3rem;
+    font-size: 25px;
+  }
 }

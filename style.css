@@ -8,6 +8,10 @@
     padding-left: 1.5rem;
     font-size: 20px;
   }
+  .TitleApp {
+    font-size: 0.7rem;
+    height: 50px;
+  }
 }
 
 @media (min-width: 251px) and (max-width: 300px) {
@@ -20,6 +24,10 @@
     padding-left: 2.7rem;
     font-size: 20px;
   }
+  .TitleApp {
+    font-size: 0.8rem;
+    height: 55px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 350px) {
@@ -31,6 +39,10 @@
   .logoTitle {
     padding-left: 4rem;
     font-size: 20px;
+  }
+  .TitleApp {
+    font-size: 0.9rem;
+    height: 58px;
   }
 }
 
@@ -56,6 +68,9 @@
     padding-left: 6.1rem;
     font-size: 24px;
   }
+  .TitleApp {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 500px) {
@@ -67,5 +82,8 @@
   .logoTitle {
     padding-left: 7.3rem;
     font-size: 25px;
+  }
+  .TitleApp {
+    font-size: 1.2rem;
   }
 }

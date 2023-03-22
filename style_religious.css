@@ -91,3 +91,63 @@ body {
   padding-right: 15px;
   padding-top: 10px;
 }
+.startBox {
+  width: 80%;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  margin-right: 10%;
+  margin-top: 5%;
+  border-radius: 2%;
+}
+.closeBox {
+  position: absolute;
+  color: #ffffff;
+  width: 10%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  height: 30px;
+  background-color: #ae1111;
+  margin-top: 3%;
+  margin-right: 3%;
+  text-align: center;
+  border-radius: 3px;
+}
+.TetBox {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 2.5rem;
+}
+.startBox-hidden {
+  display: none;
+}
+.searchBoxInput {
+  width: 63.5%;
+  height: 42.72px;
+  margin-right: 10%;
+  margin-top: 42.72px;
+  background-color: #f2f2f2;
+  padding-right: 10px;
+  font-size: 1rem;
+  font-family: "byekan";
+  outline: none;
+  border: 2px solid #e8e7e7;
+  float: right;
+}
+.search-box-button {
+  background-color: #127efd;
+  outline: none;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 42.72px;
+  float: right;
+  margin-left: 67px;
+  margin-top: 43px;
+  width: 3rem;
+}
+.search-box-icon-search {
+  width: 32px;
+  height: 32px;
+}

@@ -41,6 +41,23 @@
     font-size: 0.9rem;
     padding-left: 15px;
   }
+  .TetBox {
+    font-size: 0.7rem;
+    padding-top: 2.8rem;
+  }
+  .searchBoxInput {
+    width: 43.5%;
+    font-size: 0.7rem;
+    height: 32.72px;
+  }
+  .search-box-button {
+    width: 25px;
+    height: 32.72px;
+  }
+  .search-box-icon-search {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media (min-width: 251px) and (max-width: 300px) {
@@ -74,6 +91,23 @@
     font-size: 0.9rem;
     padding-left: 16px;
   }
+  .TetBox {
+    font-size: 0.9rem;
+    padding-top: 2.9rem;
+  }
+  .searchBoxInput {
+    width: 47.5%;
+    font-size: 0.8rem;
+    height: 32.72px;
+  }
+  .search-box-button {
+    width: 25px;
+    height: 32.72px;
+  }
+  .search-box-icon-search {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 350px) {
@@ -103,6 +137,23 @@
     padding-right: 18px;
     font-size: 1.1rem;
     padding-left: 18px;
+  }
+  .TetBox {
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+  .searchBoxInput {
+    width: 50.5%;
+    font-size: 0.9rem;
+    height: 32.72px;
+  }
+  .search-box-button {
+    width: 30px;
+    height: 32.72px;
+  }
+  .search-box-icon-search {
+    width: 22px;
+    height: 22px;
   }
 }
 @media (min-width: 267px) and (max-width: 289px) {
@@ -209,6 +260,23 @@
     font-size: 1.1rem;
     padding-left: 18px;
   }
+  .TetBox {
+    font-size: 1.1rem;
+    padding-top: 3.1rem;
+  }
+  .searchBoxInput {
+    width: 55.5%;
+    font-size: 1rem;
+    height: 32.72px;
+  }
+  .search-box-button {
+    width: 30px;
+    height: 32.72px;
+  }
+  .search-box-icon-search {
+    width: 23px;
+    height: 23px;
+  }
 }
 @media (min-width: 401px) and (max-width: 450px) {
   .nightDayState {
@@ -235,6 +303,23 @@
     font-size: 1.2rem;
     padding-left: 20px;
     line-height: 2rem;
+  }
+  .TetBox {
+    font-size: 1.2rem;
+    padding-top: 3.2rem;
+  }
+  .searchBoxInput {
+    width: 60.5%;
+    font-size: 1.1rem;
+    height: 38.72px;
+  }
+  .search-box-button {
+    width: 35px;
+    height: 38.72px;
+  }
+  .search-box-icon-search {
+    width: 25px;
+    height: 25px;
   }
 }
 @media (min-width: 451px) and (max-width: 500px) {

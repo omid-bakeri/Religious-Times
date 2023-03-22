@@ -12,6 +12,26 @@
     font-size: 0.7rem;
     height: 50px;
   }
+  .timeSet {
+    font-size: 0.9rem;
+    padding-right: 35px;
+    text-align: center;
+  }
+  .nightDayState {
+    width: 120px;
+    height: 31px;
+    margin-top: 30px;
+    margin-left: 56px;
+    border-radius: 5px;
+  }
+  .btnNightDay {
+    width: 20px;
+    height: 19.81px;
+  }
+  .imgIcon {
+    width: 20px;
+    height: 19.81px;
+  }
 }
 
 @media (min-width: 251px) and (max-width: 300px) {
@@ -27,6 +47,14 @@
   .TitleApp {
     font-size: 0.8rem;
     height: 55px;
+  }
+  .nightDayState {
+    margin-left: 69px;
+  }
+  .timeSet {
+    font-size: 1rem;
+    /* padding-right: px; */
+    text-align: center;
   }
 }
 
@@ -44,6 +72,95 @@
     font-size: 0.9rem;
     height: 58px;
   }
+  .timeSet {
+    /* float: right; */
+    padding-right: 17px;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 267px) and (max-width: 289px) {
+  .nightDayState {
+    margin-left: 75px;
+  }
+  .timeSet {
+    font-size: 1rem;
+    padding-right: 50px;
+    text-align: center;
+  }
+}
+@media (min-width: 290px) and (max-width: 313px) {
+  .nightDayState {
+    margin-left: 75px;
+  }
+  .timeSet {
+    font-size: 1rem;
+    padding-right: 50px;
+    text-align: center;
+  }
+}
+@media (min-width: 314px) and (max-width: 330px) {
+  .nightDayState {
+    float: left;
+    width: 95px;
+  }
+  .timeSet {
+    float: right;
+    font-size: 0.95rem;
+    padding-right: 20px;
+  }
+  .imgIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .btnNight {
+    /* float: left; */
+    margin-left: 20px;
+    position: absolute;
+  }
+  .btnDay {
+    margin-right: 8px;
+    /* float: right; */
+  }
+}
+@media (min-width: 331px) and (max-width: 360px) {
+  .nightDayState {
+    width: 95px;
+  }
+  .timeSet {
+    font-size: 1rem;
+    padding-right: 26px;
+  }
+  .imgIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .btnNight {
+    /* float: left; */
+    margin-left: 20px;
+    position: absolute;
+  }
+  .btnDay {
+    margin-right: 8px;
+    /* float: right; */
+  }
+}
+
+@media (min-width: 361px) and (max-width: 400px) {
+  .nightDayState {
+    width: 110px;
+  }
+  .timeSet {
+    font-size: 1.1rem;
+    padding-right: 26px;
+  }
+  .imgIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .btnNight {
+    margin-left: 17px;
+    position: absolute;
+  }
 }
 
 @media (min-width: 351px) and (max-width: 400px) {
@@ -55,6 +172,50 @@
   .logoTitle {
     padding-left: 5.1rem;
     font-size: 22px;
+  }
+}
+@media (min-width: 401px) and (max-width: 450px) {
+  .nightDayState {
+    width: 110px;
+  }
+  .timeSet {
+    font-size: 1.3rem;
+    padding-right: 35px;
+  }
+  .imgIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .btnNight {
+    margin-left: 17px;
+    position: absolute;
+  }
+}
+@media (min-width: 451px) and (max-width: 500px) {
+  .nightDayState {
+    width: 120px;
+  }
+  .timeSet {
+    font-size: 1.3rem;
+    padding-right: 45px;
+  }
+  .imgIcon {
+    width: 27px;
+    height: 27px;
+  }
+  .btnNight {
+    margin-left: 17px;
+    position: absolute;
+  }
+  .btnDay {
+    margin-right: 8px;
+  }
+  .imgIconDay {
+    margin-right: 10px;
+  }
+  .imgIconNight {
+    margin-left: 1px;
+    float: left;
   }
 }
 

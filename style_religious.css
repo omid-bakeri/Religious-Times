@@ -48,3 +48,45 @@ body {
   font-family: "byekan";
   font-size: 1rem;
 }
+.timeSet {
+  float: right;
+  font-size: 1.2rem;
+  padding-right: 40px;
+  padding-top: 33.78px;
+}
+.nightDayState {
+  background-color: #f2f2f2;
+  width: 139px;
+  height: 41.73px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+.btnNightDay {
+  border: none;
+  background-color: #f2f2f2;
+  width: 30px;
+  height: 29.81px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.imgIcon {
+  width: 30px;
+  height: 29.81px;
+}
+.btnNight {
+  float: left;
+  margin-left: 20px;
+}
+.Guide {
+  color: #0d75d4;
+  float: right;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.searchBoxTextGuide {
+  color: #3c3c3c;
+  float: right;
+  padding-right: 15px;
+}

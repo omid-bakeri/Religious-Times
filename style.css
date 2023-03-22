@@ -58,6 +58,20 @@
     width: 22px;
     height: 22px;
   }
+  .result-box {
+    margin-top: 340px;
+  }
+  .result-box-day {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+  .result-edit {
+    font-size: 0.8rem;
+  }
+  .result-city {
+    font-size: 0.7rem;
+    padding-left: 12%;
+  }
 }
 
 @media (min-width: 251px) and (max-width: 300px) {
@@ -108,6 +122,20 @@
     width: 22px;
     height: 22px;
   }
+  .result-box {
+    margin-top: 340px;
+  }
+  .result-box-day {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+  .result-edit {
+    font-size: 0.9rem;
+  }
+  .result-city {
+    font-size: 0.9rem;
+    padding-left: 15%;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 350px) {
@@ -154,6 +182,20 @@
   .search-box-icon-search {
     width: 22px;
     height: 22px;
+  }
+  .result-box {
+    margin-top: 340px;
+  }
+  .result-box-day {
+    padding: 7px;
+    font-size: 1rem;
+  }
+  .result-edit {
+    font-size: 1rem;
+  }
+  .result-city {
+    font-size: 1rem;
+    padding-left: 18%;
   }
 }
 @media (min-width: 267px) and (max-width: 289px) {
@@ -277,6 +319,10 @@
     width: 23px;
     height: 23px;
   }
+  .result-city {
+    font-size: 1.1rem;
+    padding-left: 20%;
+  }
 }
 @media (min-width: 401px) and (max-width: 450px) {
   .nightDayState {
@@ -321,6 +367,10 @@
     width: 25px;
     height: 25px;
   }
+  .result-city {
+    font-size: 1.2rem;
+    padding-left: 28%;
+  }
 }
 @media (min-width: 451px) and (max-width: 500px) {
   .nightDayState {
@@ -357,6 +407,15 @@
     font-size: 1.2rem;
     padding-left: 20px;
     line-height: 2rem;
+  }
+  .result-box-day {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  .result-city {
+    font-size: 1.4rem;
+    padding-left: 34%;
+    padding-bottom: -10px;
   }
 }
 

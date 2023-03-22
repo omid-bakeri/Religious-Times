@@ -151,3 +151,44 @@ body {
   width: 32px;
   height: 32px;
 }
+.result-box {
+  width: 80%;
+  height: 390px;
+  background-color: #f2f2f2;
+  margin-right: 10%;
+  margin-top: 10%;
+  position: absolute;
+  margin-top: 300px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.result-city {
+  font-size: 1.2rem;
+  float: left;
+  color: #e27729;
+  padding-left: 32%;
+}
+.result-search-result-city {
+  /* float: right; */
+  padding-right: 3px;
+  padding-top: 60px;
+}
+.result-religious-times {
+  padding-top: 20px;
+}
+.result-edit {
+  font-size: 1.1rem;
+}
+.result-box-day {
+  float: left;
+  background-color: #3792ff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px;
+}
+.map-link {
+  float: right;
+  text-decoration: none;
+  color: #0d75d4;
+  padding-top: 10px;
+}

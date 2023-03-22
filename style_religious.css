@@ -82,11 +82,12 @@ body {
 .Guide {
   color: #0d75d4;
   float: right;
-  padding-right: 15px;
+  padding-top: 30px;
   text-decoration: none;
 }
 .searchBoxTextGuide {
   color: #3c3c3c;
   float: right;
   padding-right: 15px;
+  padding-top: 10px;
 }

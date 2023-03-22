@@ -32,6 +32,15 @@
     width: 20px;
     height: 19.81px;
   }
+  .Guide {
+    padding-right: 30px;
+    font-size: 0.9rem;
+  }
+  .searchBoxTextGuide {
+    padding-right: 15px;
+    font-size: 0.9rem;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 251px) and (max-width: 300px) {
@@ -56,6 +65,15 @@
     /* padding-right: px; */
     text-align: center;
   }
+  .Guide {
+    padding-right: 30px;
+    font-size: 1rem;
+  }
+  .searchBoxTextGuide {
+    padding-right: 16px;
+    font-size: 0.9rem;
+    padding-left: 16px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 350px) {
@@ -76,6 +94,15 @@
     /* float: right; */
     padding-right: 17px;
     font-size: 0.9rem;
+  }
+  .Guide {
+    padding-right: 30px;
+    font-size: 1.1rem;
+  }
+  .searchBoxTextGuide {
+    padding-right: 18px;
+    font-size: 1.1rem;
+    padding-left: 18px;
   }
 }
 @media (min-width: 267px) and (max-width: 289px) {
@@ -173,6 +200,15 @@
     padding-left: 5.1rem;
     font-size: 22px;
   }
+  .Guide {
+    padding-right: 30px;
+    font-size: 1.1rem;
+  }
+  .searchBoxTextGuide {
+    padding-right: 18px;
+    font-size: 1.1rem;
+    padding-left: 18px;
+  }
 }
 @media (min-width: 401px) and (max-width: 450px) {
   .nightDayState {
@@ -189,6 +225,16 @@
   .btnNight {
     margin-left: 17px;
     position: absolute;
+  }
+  .Guide {
+    padding-right: 35px;
+    font-size: 1.3rem;
+  }
+  .searchBoxTextGuide {
+    padding-right: 20px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    line-height: 2rem;
   }
 }
 @media (min-width: 451px) and (max-width: 500px) {
@@ -216,6 +262,16 @@
   .imgIconNight {
     margin-left: 1px;
     float: left;
+  }
+  .Guide {
+    padding-right: 35px;
+    font-size: 1.3rem;
+  }
+  .searchBoxTextGuide {
+    padding-right: 20px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    line-height: 2rem;
   }
 }
 

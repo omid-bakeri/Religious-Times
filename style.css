@@ -64,6 +64,7 @@
   .result-box-day {
     padding: 5px;
     font-size: 0.7rem;
+    user-select: none;
   }
   .result-edit {
     font-size: 0.8rem;

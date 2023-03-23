@@ -134,6 +134,7 @@ body {
   outline: none;
   border: 2px solid #e8e7e7;
   float: right;
+  user-select: none;
 }
 .search-box-button {
   background-color: #127efd;
@@ -152,6 +153,7 @@ body {
   height: 32px;
 }
 .result-box {
+  opacity: 70%;
   width: 80%;
   height: 390px;
   background-color: #f2f2f2;
@@ -191,4 +193,23 @@ body {
   text-decoration: none;
   color: #0d75d4;
   padding-top: 10px;
+}
+.searchBoxInput:focus {
+  border-color: #0d75d4;
+  transition: 0.6s ease-in;
+}
+.search-box-button:hover {
+  cursor: pointer;
+  background-color: #3792ff;
+  transition: 0.6s ease-in;
+}
+.result-edit-tet::selection {
+  background-color: #ae1111;
+  color: #e8e7e7;
+}
+.btnNight:hover {
+  cursor: pointer;
+}
+.btnDay:hover {
+  cursor: pointer;
 }

@@ -449,3 +449,6 @@
     font-size: 1.2rem;
   }
 }
+.result-box-hidden {
+  display: none;
+}

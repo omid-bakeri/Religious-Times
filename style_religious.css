@@ -132,9 +132,10 @@ body {
   font-size: 1rem;
   font-family: "byekan";
   outline: none;
-  border: 2px solid #e8e7e7;
+  border: 2px solid #e8e8e7;
   float: right;
   user-select: none;
+  color: rgb(77, 77, 75);
 }
 .search-box-button {
   background-color: #127efd;

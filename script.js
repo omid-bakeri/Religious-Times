@@ -29,7 +29,7 @@ const map_link = document.querySelector(".map-link");
 const startBox = document.querySelector(".startBox");
 const tetBox = document.querySelector(".TetBox");
 const closeBox = document.querySelector(".closeBox");
-// Night and Day State
+
 const month = [
   "فروردین",
   "اردیبهشت",
@@ -44,6 +44,33 @@ const month = [
   "بهمن",
   "اسفند",
 ];
+
+// current Time
+function getCurrentTime(time) {
+  let currentTime = new Date();
+  var hour = currentTime.getHours();
+  var minute = currentTime.getMinutes();
+  var second = currentTime.getSeconds();
+
+  if (hour.toString().length == 1) {
+    hour = "0" + hour;
+  }
+  if (minute.toString().length == 1) {
+    minute = "0" + minute;
+  }
+  if (second.toString().length == 1) {
+    second = "0" + second;
+  }
+
+  timeSet.textContent = `ساعت اکنون : ${second} : ${minute} : ${hour}`;
+  return time;
+}
+setInterval(function () {
+  var cTime = getCurrentTime();
+  // Timer.innerHTML = cTime;
+}, 1000);
+
+// Night and Day State
 class ChangeDarKTheme {
   constructor() {
     btnNight.addEventListener("click", this._changeDarkThemeFunc.bind(this));

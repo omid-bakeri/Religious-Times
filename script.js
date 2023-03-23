@@ -18,6 +18,7 @@ const search_box_button = document.querySelector(".search-box-button");
 const result_search_result_city = document.querySelector(
   ".result-search-result-city"
 );
+const result_box_day = document.querySelector(".result-box-day");
 const result_city = document.querySelector(".result-city");
 const azan_sobh = document.querySelector(".azan-sobh");
 const tolo_aftab = document.querySelector(".tolo-aftab");
@@ -25,9 +26,24 @@ const azan_zohr = document.querySelector(".azan-zohr");
 const azan_maghreb = document.querySelector(".azan-maghreb");
 const nime_sharei_shab = document.querySelector(".nime-sharei-shab");
 const map_link = document.querySelector(".map-link");
-
+const startBox = document.querySelector(".startBox");
+const tetBox = document.querySelector(".TetBox");
+const closeBox = document.querySelector(".closeBox");
 // Night and Day State
-
+const month = [
+  "فروردین",
+  "اردیبهشت",
+  "خرداد",
+  "تیر",
+  "مرداد",
+  "شهریور",
+  "مهر",
+  "آبان",
+  "آذر",
+  "دی",
+  "بهمن",
+  "اسفند",
+];
 class ChangeDarKTheme {
   constructor() {
     btnNight.addEventListener("click", this._changeDarkThemeFunc.bind(this));
@@ -92,3 +108,49 @@ class ChangeDarKTheme {
 const changeDarKTheme = new ChangeDarKTheme();
 
 // API Religious Times
+
+search_box_button.addEventListener("click", () => {
+  if (searchBoxInput.value.length === 0) {
+    ShowError();
+    return false;
+  } else if (searchBoxInput.value.length !== 0) {
+    ShowElement();
+    GetAPI();
+    return true;
+  }
+});
+closeBox.addEventListener("click", () => {
+  startBox.classList.add(".startBox-hidden");
+  startBox.style.display = "none";
+});
+function ShowError() {
+  startBox.classList.remove(".startBox-hidden");
+  startBox.style.display = "block";
+  tetBox.textContent = "کاربر گرامی شهر مد نظر خود را وارد نمایید";
+}
+function ShowElement() {
+  result_box.classList.remove("result_box-hidden");
+  result_box.style.display = "block";
+}
+function GetAPI() {
+  const cityAPI = function (city) {
+    fetch(
+      `https://one-api.ir/owghat/?token=274908:641729abd8413&city=${city}&en_num=true`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.result);
+        result_city.textContent = data.result.city;
+        result_box_day.textContent = `${data.result.day} ${
+          month[data.result.month - 1]
+        }  1402`;
+        azan_sobh.textContent = `اذان صبح : ${data.result.azan_sobh}`;
+        tolo_aftab.textContent = `طلوع آفتاب : ${data.result.toloe_aftab}`;
+        azan_zohr.textContent = `اذان ظهر : ${data.result.azan_zohre}`;
+        azan_maghreb.textContent = `اذان مغرب : ${data.result.azan_maghreb}`;
+        nime_sharei_shab.textContent = `نیمه شب شرعی : ${data.result.nime_shabe_sharie}`;
+      });
+  };
+  let cityElement = searchBoxInput.value;
+  cityAPI(cityElement);
+}

@@ -136,48 +136,55 @@ const changeDarKTheme = new ChangeDarKTheme();
 
 // API Religious Times
 
-search_box_button.addEventListener("click", () => {
-  if (searchBoxInput.value.length === 0) {
-    ShowError();
-    return false;
-  } else if (searchBoxInput.value.length !== 0) {
-    ShowElement();
-    GetAPI();
-    return true;
+class CityAPI {
+  constructor() {
+    search_box_button.addEventListener("click", this._getAPI.bind(this));
+    closeBox.addEventListener("click", this._closeElement.bind(this));
   }
-});
-closeBox.addEventListener("click", () => {
-  startBox.classList.add(".startBox-hidden");
-  startBox.style.display = "none";
-});
-function ShowError() {
-  startBox.classList.remove(".startBox-hidden");
-  startBox.style.display = "block";
-  tetBox.textContent = "کاربر گرامی شهر مد نظر خود را وارد نمایید";
+  _getAPI() {
+    if (searchBoxInput.value.length === 0) {
+      this._ShowError();
+      return false;
+    } else if (searchBoxInput.value.length !== 0) {
+      this._showBox();
+      this._ShowElement();
+      return true;
+    }
+  }
+  _ShowError() {
+    startBox.classList.remove(".startBox-hidden");
+    startBox.style.display = "block";
+    tetBox.textContent = "کاربر گرامی شهر مد نظر خود را وارد نمایید";
+  }
+  _closeElement() {
+    startBox.classList.add(".startBox-hidden");
+    startBox.style.display = "none";
+  }
+  _showBox() {
+    result_box.classList.remove("result_box-hidden");
+    result_box.style.display = "block";
+  }
+  _ShowElement() {
+    const cityAPI = function (city) {
+      fetch(
+        `https://one-api.ir/owghat/?token=274908:641729abd8413&city=${city}&en_num=true`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data.result);
+          result_city.textContent = data.result.city;
+          result_box_day.textContent = `${data.result.day} ${
+            month[data.result.month - 1]
+          }  1402`;
+          azan_sobh.textContent = `اذان صبح : ${data.result.azan_sobh}`;
+          tolo_aftab.textContent = `طلوع آفتاب : ${data.result.toloe_aftab}`;
+          azan_zohr.textContent = `اذان ظهر : ${data.result.azan_zohre}`;
+          azan_maghreb.textContent = `اذان مغرب : ${data.result.azan_maghreb}`;
+          nime_sharei_shab.textContent = `نیمه شب شرعی : ${data.result.nime_shabe_sharie}`;
+        });
+    };
+    let cityElement = searchBoxInput.value;
+    cityAPI(cityElement);
+  }
 }
-function ShowElement() {
-  result_box.classList.remove("result_box-hidden");
-  result_box.style.display = "block";
-}
-function GetAPI() {
-  const cityAPI = function (city) {
-    fetch(
-      `https://one-api.ir/owghat/?token=274908:641729abd8413&city=${city}&en_num=true`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data.result);
-        result_city.textContent = data.result.city;
-        result_box_day.textContent = `${data.result.day} ${
-          month[data.result.month - 1]
-        }  1402`;
-        azan_sobh.textContent = `اذان صبح : ${data.result.azan_sobh}`;
-        tolo_aftab.textContent = `طلوع آفتاب : ${data.result.toloe_aftab}`;
-        azan_zohr.textContent = `اذان ظهر : ${data.result.azan_zohre}`;
-        azan_maghreb.textContent = `اذان مغرب : ${data.result.azan_maghreb}`;
-        nime_sharei_shab.textContent = `نیمه شب شرعی : ${data.result.nime_shabe_sharie}`;
-      });
-  };
-  let cityElement = searchBoxInput.value;
-  cityAPI(cityElement);
-}
+const cityAPI = new CityAPI();

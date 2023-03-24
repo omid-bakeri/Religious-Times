@@ -181,6 +181,13 @@ class CityAPI {
           azan_zohr.textContent = `اذان ظهر : ${data.result.azan_zohre}`;
           azan_maghreb.textContent = `اذان مغرب : ${data.result.azan_maghreb}`;
           nime_sharei_shab.textContent = `نیمه شب شرعی : ${data.result.nime_shabe_sharie}`;
+        })
+        .catch((err) => {
+          startBox.classList.remove(".startBox-hidden");
+          startBox.style.display = "block";
+          tetBox.textContent = "کاربر گرامی شهر مورد نظر شما یافت نشد";
+          result_box.classList.add("result_box-hidden");
+          result_box.style.display = "none";
         });
     };
     let cityElement = searchBoxInput.value;
